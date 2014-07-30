@@ -1,0 +1,9 @@
+{
+  "name": "mnpstatic",
+  "version": "0.0.0",
+  "authors": [
+    "Josh Kieschnick <jjkiesch@gmail.com>"
+  ],
+  "description": "Wireframes for My New Place",
+  "private": true
+}
