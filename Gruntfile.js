@@ -92,7 +92,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:jjkiesch/mnpstatic.git',
+          remote: 'git@github.com:jjkiesch/mnpsitemap.git',
           branch: 'gh-pages'
         }
       }
