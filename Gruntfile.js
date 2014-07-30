@@ -82,14 +82,28 @@ module.exports = function(grunt) {
 
     // Before generating any new files,
     // remove any previously-created files.
-    clean: ['<%= config.dist %>/**/*.{html,xml}']
+    clean: ['<%= config.dist %>/**/*.{html,xml}'],
 
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:jjkiesch/mnpstatic.git',
+          branch: 'gh-pages'
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-build-control');
 
   grunt.registerTask('server', [
     'clean',
