@@ -16,14 +16,14 @@ layout: with-sidebar.hbs
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active" id="listing">
+    <div class="tab-pane active fade in" id="listing">
       <div class="row">
         {{#times 10}}
           <div class="col-md-12 col-sm-3">
-            <h4>Apartment Name</h4>
+            <h4><a href="listing.html">Apartment Name</a></h4>
             <div class="row">
               <div class="col-md-3">
-                <img src="http://placehold.it/300x190" />
+                <a href="listing.html"><img src="http://placehold.it/300x190" /></a>
               </div>
               <div class="col-md-5">
                 <h4 class="hidden-sm hidden-xs">Description</h4>
@@ -42,7 +42,7 @@ layout: with-sidebar.hbs
         {{/times}}
       </div>
     </div> <!-- .tab-pane -->
-    <div class="tab-pane" id="areainfo">
+    <div class="tab-pane fade" id="areainfo">
       <h2>Information about the Plano area</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -53,7 +53,7 @@ layout: with-sidebar.hbs
         <li>Feature three</li>
       </ul>
     </div> <!-- .tab-pane -->
-    <div class="tab-pane" id="map">
+    <div class="tab-pane fade" id="map">
       <div style="margin: 1em 0;"><iframe width="500" height="400" frameborder="0" src="http://www.bing.com/maps/embed/viewer.aspx?v=3&cp=33.020790~-96.699249&lvl=11&w=500&h=400&sty=r&typ=s&pp=plano~~33.020790~-96.699249&ps=55&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe><div style="margin: 12px 0 0 0;"><a target="_blank" href="http://www.bing.com/maps/?cp=33.020790~-96.699249&sty=r&lvl=11&sp=point.33.020790_-96.699249_plano_&mm_embed=map">View larger map</a>&nbsp; |&nbsp; <a target="_blank" href="http://www.bing.com/maps/?cp=33.020790~-96.699249&sty=r&lvl=11&rtp=~pos.33.020790_-96.699249_plano_&mm_embed=dir">Get directions</a>&nbsp; |&nbsp; <a target="_blank" href="http://www.bing.com/maps/?cp=ph33jn6y7jpq&sty=b&lvl=18&sp=point.33.020790_-96.699249_plano_&mm_embed=be">View bird's eye</a></div></div>
     </div> <!-- .tab-pane -->
   </div>
